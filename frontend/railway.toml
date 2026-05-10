@@ -1,0 +1,8 @@
+# Railway Configuration for Node.js Frontend (CRA)
+# This file helps Railway detect and configure your application properly
+
+[build]
+builder = "nixpacks"
+
+[build.buildpacks]
+nixpacks = ["nodejs"]
