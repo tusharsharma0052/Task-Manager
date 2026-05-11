@@ -1,8 +1,2 @@
-# Railway Configuration for Node.js Backend
-# This file helps Railway detect and configure your application properly
-
-[build]
-builder = "nixpacks"
-
-[build.buildpacks]
-nixpacks = ["nodejs"]
+[deploy]
+startCommand = "node server.js"
