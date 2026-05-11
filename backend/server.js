@@ -18,7 +18,7 @@ connectDB();
 // Middleware
 const allowedOrigins = [
   'https://unrivaled-moxie-1b11bd.netlify.app/',
-  'https://task-manager-eud5.onrender.com',
+  'https://task-manager-eud5.onrender.com/api/',
   process.env.FRONTEND_URL,
 ].filter(Boolean);
 
