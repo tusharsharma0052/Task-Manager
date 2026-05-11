@@ -18,7 +18,7 @@ connectDB();
 // Middleware
 const allowedOrigins = [
   'http://localhost:3000',
-  'http://localhost:5000',
+  'https://task-manager-eud5.onrender.com',
   process.env.FRONTEND_URL,
 ].filter(Boolean);
 
