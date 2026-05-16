@@ -17,8 +17,8 @@ connectDB();
 
 // Middleware
 const allowedOrigins = [
-  'https://unrivaled-moxie-1b11bd.netlify.app/',
-  
+  'https://unrivaled-moxie-1b11bd.netlify.app',
+  process.env.FRONTEND_URL?.replace(/\/$/, ''), // Remove trailing slash
 ].filter(Boolean);
 
 app.use(
