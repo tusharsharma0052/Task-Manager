@@ -18,14 +18,13 @@ connectDB();
 // Middleware
 const allowedOrigins = [
   'https://unrivaled-moxie-1b11bd.netlify.app/',
-  'https://task-manager-eud5.onrender.com',
-  process.env.FRONTEND_URL,
 ].filter(Boolean);
 
 app.use(
   cors({
     origin: allowedOrigins,
     credentials: true,
+    withCredentials: true,
   })
 );
 app.use(express.json({ limit: '10mb' }));
