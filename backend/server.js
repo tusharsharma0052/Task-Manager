@@ -18,6 +18,7 @@ connectDB();
 // Middleware
 const allowedOrigins = [
   'https://unrivaled-moxie-1b11bd.netlify.app/',
+  
 ].filter(Boolean);
 
 app.use(
